@@ -5,6 +5,7 @@
 
 ../out/
 ../out/*.class
-*.class
+../*.class
+../*/*.class
 
 *.iml
