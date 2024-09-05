@@ -3,8 +3,8 @@
 /shelf/workspace.xml
 /workspace.xml
 
-/out/
-/out/*.class
+../out/
+../out/*.class
 *.class
 
 *.iml
