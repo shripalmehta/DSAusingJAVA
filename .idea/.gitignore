@@ -1,8 +1,10 @@
 # Default ignored files
 /shelf/
+/shelf/workspace.xml
 /workspace.xml
 
 /out/
+/out/*.class
 *.class
 
 *.iml
