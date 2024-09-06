@@ -10,7 +10,7 @@ public class EncodedPotion {
             i+=1;
             j+=2;
 
-            if (potion.substring(0, i).equals(potion.substring(i, j))) {
+            while (i<potion.length() && j<potion.length() && potion.substring(0, i).equals(potion.substring(i, j))) {
                 sb.append('*');
                 i=j;
                 j=2*i;
@@ -26,5 +26,11 @@ public class EncodedPotion {
         EncodedPotion encodedPotion = new EncodedPotion();
         String str1 = "ABABCABABCDABABCABABCDDD";
         System.out.println(encodedPotion.EncodePotion(str1));
+        String str2 = "QWERTYU";
+        System.out.println(encodedPotion.EncodePotion(str2));
+        String str3 = "KKKKK";
+        System.out.println(encodedPotion.EncodePotion(str3));
+        String str4 = "KKKKKK";
+        System.out.println(encodedPotion.EncodePotion(str4));
     }
 }
